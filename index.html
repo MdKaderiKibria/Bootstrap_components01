@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- css links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Bootstrap components practice</title>
+</head>
+<body>
+    <section class="bg-light py-5">
+      <h1 class="text-center py-3">Accordion practice</h1>
+        <div class="row">
+          
+            <div class="col-lg-6 ms-auto me-auto">
+                <div class="accordion" id="accordion_1">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          Question 01
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion_1">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Question 02
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion_1">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Question 03
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion_1">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+      <h1 class="text-center py-3"> Alert practice</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center mx-auto">
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              <h1 class="alert-heading">Lorem ipsum dolor sit amet.</h1>
+              <hr>
+                <p>Lorem ipsum dolor sit amet consectetur, <a href="#" class="alert-link">Facebook page</a>. Aspernatur, soluta?
+                </p>
+                <button class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light py-5">
+      <h1 class="text-center text-danger fw-bolder py-3">Badge practice</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col6 mx-auto text-center">
+            <h1>Lorem, ipsum <span class="badge bg-warning">dolor</span></h1>
+            <h1>Lorem ipsum dolor sit <span class="badge bg-danger rounded-pill px-2">amet</span></h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <h1 class="text-center text-capitalize">Breadcrumb practice</h1>
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">home</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light">
+      <h1 class="text-center text-capitalize mb-5
+      ">
+        button practice
+      </h1>
+      <div class="row text-center">
+        <div class="col-lg-9 mx-auto">
+          <button class="btn btn-primary">Read more</button>
+          <button class="btn btn-warning w-100 my-2">Read more</button>
+          <button class="btn btn-danger rounded">Read more</button>
+          <button class="btn btn-primary rounded rounded-pill">Read more</button>
+          <div class="btn-group w-100 my-2" role="group" aria-label="button example">
+            <button class="btn btn-primary">Read more</button>
+            <button class="btn btn-warning">Read more</button>
+            <button class="btn btn-success">Read more</button>
+            <button class="btn btn-secondary">Read more</button>
+          </div>
+          <button class="btn btn-outline-primary">Read more</button>
+          <button class="btn btn-outline-danger">Read more</button>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="py-5">
+      <h1 class="text-center text-capitalize mb-5">Card practice</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-4 mx-auto">
+            <div class="card bg-danger">
+              <img src="images/menu-5.jpg" alt="" class="card-img-top w-100">
+              <div class="card-body">
+                <h5 class="card-tittle">
+                  This is card title
+                </h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, id.
+                </p>
+              </div>
+              <ul class="list-group">
+                <li class="list-group-item  bg-warning">Item 01</li>
+                <li class="list-group-item  bg-warning">Item 02</li>
+                <li class="list-group-item  bg-warning">Item 03</li>
+              </ul>
+              <div class="card-body">
+                <a href="" class="card-link">This is card link01</a>
+                <a href="" class="card-link">This is card link02</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light">
+      <h1 class="text-center text-capitalize mb-5">spinner practice</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mx-auto text-center">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-border text-secondary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-border text-success" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-border text-danger" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-border text-warning" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-border text-info" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            
+            <div class="spinner-border text-dark" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <h1 class="text-center text-capitalize">Tabs practice</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mx-auto">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Home</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, reprehenderit id veritatis nihil ad qui. Numquam animi vel sit quod, ipsum expedita culpa eaque eligendi quaerat voluptatibus labore incidunt dicta?</div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, corporis eum exercitationem obcaecati saepe mollitia, fugit nemo, beatae odio dolores illum sint quas nihil hic quod vero repellendus amet. Fugit.</div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe obcaecati nam recusandae voluptates et numquam iste, harum ipsa ab voluptatum vitae illum rerum odio modi dicta laboriosam dolor at? Voluptatem.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light">
+      <h1 class="text-center text-capitalize">progress bar practice</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mx-auto">
+            <div class="progress mt-5">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">HTML 95%</div>
+            </div>
+            <div class="progress mt-2 ">
+              <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">CSS 90%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <h1 class="text-center text-capitalize">
+        Dropdown practice
+      </h1>
+      <div class="row">
+        <div class="col-lg-6 mx-auto text-center mt-5">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light">
+      <h1 class="text-center text-capitalize">
+        Pazination practice
+      </h1>
+      <div class="row">
+        <div class="col-lg-6 mx-auto text-center">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <h1 class="text-center">
+        Popovers Practice
+      </h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mx-auto text-center">
+                        <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Launch demo modal
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/c860a299a7.js" crossorigin="anonymous"></script>
+
+    <!-- Js links -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
